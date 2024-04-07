@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Stephanie Ong">
+    <title>TypeScript Technical Documentation</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>TypeScript Documentation</header>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#pros">Pros</a>
+      <a class="nav-link" href="#how_to_use_typescript">How to use TypeScript</a>
+      <a class="nav-link" href="#typescript_compiler">TypeScript Compiler</a>
+      <a class="nav-link" href="#simple_types">Simple types</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>TypeScript is a syntactic superset of JavaScript which adds static typing. This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.</p>
+        <p>TypeScript being a "Syntactic Superset" means that it shares the same base syntax as JavaScript, but adds something to it.</p>
+      </section>
+      <section class="main-section" id="pros">
+        <header>Pros</header>
+        <p>JavaScript is a loosely typed language. It can be difficult to understand what types of data are being passed around in JavaScript.</p>
+        <p>In JavaScript, function parameters and variables don't have any information. So developers need to look at documentation, or guess based on the implementation.</p>
+        <p>TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.</p>
+        <p>For example, TypeScript will report an error when passing a <code>string</code> into a function that expects a number. JavaScript will not. TypeScript uses compile time type checking. Which means it checks if the specified types match before running the code, not while running the code.</p>
+      </section>
+      <section class="main-section" id="how_to_use_typescript">
+        <header>How to use TypeScript</header>
+        <p>A common way to use TypeScript is to use the official TypeScript compiler, which transpiles TypeScript code into JavaScript. The next <code>section</code> shows how to get the compiler setup for a local project. Some popular code editors, such as Visual Studio Code, have built-in TypeScript support and can show errors as you write code.</p>
+      </section>
+      <section class="main-section" id="typescript_compiler">
+        <header>TypeScript Compiler</header>
+        <p>TypeScript is transpiled into JavaScript using a compiler. TypeScript being converted into JavaScript means it runs anywhere that JavaScript runs.</p>
+        <p>TypeScript has an official compiler which can be installed through npm. By default the TypeScript compiler will print a help message when run in an empty project. The compiler can be configured using a tsconfig.json file.</p>
+      </section>
+      <section class="main-section" id="simple_types">
+        <header>Simple types</header>
+        <p>There are three main primitives in JavaScript and TypeScript.</p>
+        <ul>
+          <li><code>boolean</code> - true or false values</li>
+          <li><code>number</code> - whole numbers and floating point values</li>
+          <li><code>string</code> - text values like "TypeScript Rocks"</li>
+        </ul>
+        <p>There are also 2 less common primitives used in later versions of Javascript and TypeScript.</p>
+        <ul>
+          <li>bigint - whole numbers and floating point values, but allows larger negative and positive numbers than the number type.</li>
+          <li>symbol are used to create a globally unique identifier.</li>
+        </ul>
+      </section>
+      <footer>Source: <a href="https://www.w3schools.com/typescript/typescript_intro.php" target="_blank">W3Schools</a></footer>
+    </main>
+  </body>
+</html>
